@@ -1,2 +1,2 @@
 # AdHit
-Applying Machine Learning To Analyze Which Advertisement Has Been Mostly Viewed By The Users Using Thomson Sampling Algorithm.
+To analyze the data that contains viewership of an advertisement and find which is mostly viewed by the audience by using Thompson Sampling Algorithm

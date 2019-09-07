@@ -1,19 +1,20 @@
-# Thompson Sampling
 
-# Importing the libraries
+#importing the libraries
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-# Importing the dataset
+#importing the dataset
 dataset = pd.read_csv('Ads_CTR_Optimisation.csv')
 
-# Implementing Thompson Sampling
+#applying Thompson Sampling algorithm
 import random
 N = 10000
 d = 10
 ads_selected = []
-numbers_of_rewards_1 = [0] * d
+#no.of ad's selected
+numbers_of_rewards_1 = [0] * d  
+#no.of ad's available
 numbers_of_rewards_0 = [0] * d
 total_reward = 0
 for n in range(0, N):
@@ -32,7 +33,7 @@ for n in range(0, N):
         numbers_of_rewards_0[ad] = numbers_of_rewards_0[ad] + 1
     total_reward = total_reward + reward
 
-# Visualising the results - Histogram
+#results
 plt.hist(ads_selected)
 plt.title('Histogram of ads selections')
 plt.xlabel('Ads')
